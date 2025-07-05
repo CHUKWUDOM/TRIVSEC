@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594847119584",
+    "project_id": "trivseccomplete1",
+    "storage_bucket": "trivseccomplete1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594847119584:android:e46bc86a404e18e9d2f885",
+        "android_client_info": {
+          "package_name": "com.strathmore.trivseccomplete"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ_zlmmXCzJkDSvBD7m2Hy-TPO7a1Nt7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
