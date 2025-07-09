@@ -64,21 +64,23 @@ data class ChosenAnswers(
 The app uses Firebase Realtime Database to store and retrieve quiz questions. The database structure is as follows:
 ````
 {
-  "Questions": {
+  "questions": {
     "question1": {
-      "question": "What is the capital of France?",
-      "choices": {
-        "a": "Paris",
-        "b": "London",
-        "c": "Berlin",
-        "d": "Madrid"
+      "id": "question1",
+      "category": "Cybersecurity",
+      "questionText": "Which of the following is a common method used in phishing attacks?",
+      "options": {
+        "A": "Using strong encryption algorithms",
+        "B": "Installing a firewall",
+        "C": "Sending fraudulent emails to trick users",
+        "D": "Regular software updates"
       },
-      "correctAnswer": "a"
-    },
-    "question2": { ... },
-    ...
+      "correctAnswer": "C",
+      "explanation": "Phishing attacks often involve sending fake emails that appear legitimate to trick users into revealing sensitive information."
+    }
   }
 }
+
 ````
 ## **Firebase Usage**
 * Initialization: In Quiz, the app initializes Firebase with Firebase.database and references the "Questions" node using database.getReference("Questions").
